@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Indicadores EMTEL</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="../static/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+    <p></p>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        
+          <img class="img-profile " width=50% height=450%  src="http://festivaldetiterespopayan.org/wp-content/uploads/2017/10/cropped-logo21.png">
+      </a>
+      <p></p>
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="../home">
+          <i class="fas fa-fw fa-chart-line"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Configuración
+      </div>
+
+      <!-- Nav Item -->
+      <li class="nav-item active">
+        <a class="nav-link" href="/obj_form">
+          <i class="fas fa-fw fa-pencil-alt"></i>
+          <span>Asignar Calificación</span></a>
+      </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item -->
+      <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-download"></i>
+            <span>Descargar plantilla</span></a>
+        </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Documentación
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item -->
+      <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Investigación</span></a>
+        </li>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-user-graduate"></i>
+          <span>Autores</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-file"></i>
+          <span>manual de usuario</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          
+            <div class="col-8 text-center">
+                <h4><strong>Sistema de Apoyo a Gestión Estratégica</strong></h4>
+            </div>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <div class="col">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Universidad del Cauca</span>
+                    <img class="img-profile" width=15% height="80%" style="padding:0 0 0 0" src="https://carrerasuniversitarias.com.co/logos/original/logo-universidad-del-cauca.png">
+                </a>
+            </div>
+        </nav>          
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                    {% if url_obj == 'nav-obj1' %}
+                    <a class="nav-item nav-link active" id="nav-obj1-tab" data-toggle="tab" href="/obj_form/nav-obj1" role="tab" aria-controls="nav-obj1" aria-selected="true">Objetivo 1</a>
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj1-tab" data-toggle="tab" href="/obj_form/nav-obj1" role="tab" aria-controls="nav-obj1" aria-selected="true">Objetivo 1</a>
+                    {% endif %}
+                    
+                    {% if url_obj == 'nav-obj2' %}
+                    <a class="nav-item nav-link active" id="nav-obj2-tab" data-toggle="tab" href="/obj_form/nav-obj2" role="tab" aria-controls="nav-obj2" aria-selected="false">Objetivo 2</a>    
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj2-tab" data-toggle="tab" href="/obj_form/nav-obj2" role="tab" aria-controls="nav-obj2" aria-selected="false">Objetivo 2</a>
+                    {% endif %}
+
+                    {% if url_obj == 'nav-obj3' %}
+                    <a class="nav-item nav-link active" id="nav-obj3-tab" data-toggle="tab" href="/obj_form/nav-obj3" role="tab" aria-controls="nav-obj3" aria-selected="false">Objetivo 3</a>
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj3-tab" data-toggle="tab" href="/obj_form/nav-obj3" role="tab" aria-controls="nav-obj3" aria-selected="false">Objetivo 3</a>
+                    {% endif %}
+
+                    {% if url_obj == 'nav-obj4' %}
+                    <a class="nav-item nav-link active" id="nav-obj4-tab" data-toggle="tab" href="/obj_form/nav-obj4" role="tab" aria-controls="nav-obj4" aria-selected="false">Objetivo 4</a>
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj4-tab" data-toggle="tab" href="/obj_form/nav-obj4" role="tab" aria-controls="nav-obj4" aria-selected="false">Objetivo 4</a>
+                    {% endif %}
+
+                    {% if url_obj == 'nav-obj5' %}
+                    <a class="nav-item nav-link active" id="nav-obj5-tab" data-toggle="tab" href="/obj_form/nav-obj5" role="tab" aria-controls="nav-obj5" aria-selected="false">Objetivo 5</a>
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj5-tab" data-toggle="tab" href="/obj_form/nav-obj5" role="tab" aria-controls="nav-obj5" aria-selected="false">Objetivo 5</a>
+                    {% endif %}
+
+                    {% if url_obj == 'nav-obj6' %}
+                    <a class="nav-item nav-link active" id="nav-obj6-tab" data-toggle="tab" href="/obj_form/nav-obj6" role="tab" aria-controls="nav-obj6" aria-selected="false">Objetivo 6</a>
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj6-tab" data-toggle="tab" href="/obj_form/nav-obj6" role="tab" aria-controls="nav-obj6" aria-selected="false">Objetivo 6</a>
+                    {% endif %}
+
+                    {% if url_obj == 'nav-obj7' %}
+                    <a class="nav-item nav-link active" id="nav-obj7-tab" data-toggle="tab" href="/obj_form/nav-obj7" role="tab" aria-controls="nav-obj7" aria-selected="false">Objetivo 7</a>
+                    {% else %}
+                    <a class="nav-item nav-link" id="nav-obj7-tab" data-toggle="tab" href="/obj_form/nav-obj7" role="tab" aria-controls="nav-obj7" aria-selected="false">Objetivo 7</a>
+                    {% endif %}
+                </div>
+            </nav>
+
+            <!-- call forms objetives whit url -->
+            {% if url_obj == 'nav-obj1'%}
+                {% block form_obj1 %}
+                {% endblock %}
+            {% elif url_obj == 'nav-obj2'%}
+                {% block form_obj2 %}
+                {% endblock %}
+            {% elif url_obj == 'nav-obj3'%}
+                {% block form_obj3 %}
+                {% endblock %}
+            {% elif url_obj == 'nav-obj4'%}
+                {% block form_obj4 %}
+                {% endblock %}
+            {% elif url_obj == 'nav-obj5'%}
+                {% block form_obj5 %}
+                {% endblock %}
+            {% elif url_obj == 'nav-obj6'%}
+                {% block form_obj6 %}
+                {% endblock %}
+            {% elif url_obj == 'nav-obj7'%}
+                {% block form_obj7 %}
+                {% endblock %}
+            {% else %}                
+            {% endif %}
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Universidad del Cauca 2019</span>
+              </div>
+            </div>
+          </footer>
+          <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+</body>
+</html>

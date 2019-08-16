@@ -1,0 +1,320 @@
+{% extends "base_obj_form.html" %}
+
+{% block form_obj1 %}
+<div class="tab-pane fade show active" id="nav-obj1" role="tabpanel" aria-labelledby="nav-obj1-tab">
+        <!-- Form Objetivo 1-->
+        <p></p>
+        <div class="col-auto text-center">
+            <h5 class="m-0 text-primary"><strong>Garantizar la sostenibilidad económica de la organización</strong></h5>
+        </div>
+        <hr class="sidebar-divider">
+        <form method="post" action="{{ url_for('obj_form')}} ">
+          <div class="col-3">
+              <label class="text-primary" for="inlineFormInputGroup">Disminuir los pasivos a corto plazo</label>
+              <div class="input-group mb-2">
+                  <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_1_1" placeholder="Valor de 0 a 100">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <label class="text-primary" for="inlineFormInputGroup">Incrementar los ingresos</label>
+              <div class="input-group mb-2">
+                <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_1_2" placeholder="Valor de 0 a 100">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">%</div>
+                </div>
+              </div>
+            </div>
+            <hr class="sidebar-divider">
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+            </div>                
+        </form>
+    </div>
+{% endblock %}
+
+{% block form_obj2 %}
+<div class="tab-pane show active" id="nav-obj2" role="tabpanel" aria-labelledby="nav-obj2-tab">
+    <p></p>
+    <div class="col-auto text-center">
+        <h5 class="m-0 text-primary"><strong>Crear experiencias gratamente memorables para posicionar la marca EMTEL en el corazón de los clientes</strong></h5>
+    </div>
+    <hr class="sidebar-divider">
+    <form method="post" >
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Crear cultura basada en la experiencia</label>
+        </div>
+        <div class="col-3">
+            <div class="input-group mb-2">
+                <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_2_1" placeholder="Valor de 0 a 100">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">%</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Alcanzar los tiempos promedio de instalacion y reparación requeridos</label>
+        </div>
+        <div class="col-3">
+            <div class="input-group mb-2">
+                <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_2_2" placeholder="Valor de 0 a 100">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">%</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Garantizar los niveles de calidad establecidos en la prestación de los servicios TIC</label>
+        </div>
+        <div class="col-3">
+            <div class="input-group mb-2">
+                <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_2_3" placeholder="Valor de 0 a 100">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">%</div>
+                </div>
+            </div>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+        </div>                
+    </form>
+</div>
+{% endblock %}
+
+{% block form_obj3 %}
+<div class="tab-pane show active" id="nav-obj3" role="tabpanel" aria-labelledby="nav-obj3-tab">
+    <p></p>
+    <div class="col-auto text-center">
+        <h5 class="m-0 text-primary"><strong>Incursionar en nuevas oportunidades de negocio</strong></h5>
+    </div>
+    <hr class="sidebar-divider">
+    <form method="post">
+      <div class="col-auto">
+          <label class="text-primary" for="inlineFormInputGroup">Generar nuevas oportunidades de negocio</label>
+      </div>
+      <div class="col-3">
+        <div class="input-group mb-2">
+          <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_3_1" placeholder="Valor de 0 a 100">
+          <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+          </div>
+        </div>
+      </div>
+      <hr class="sidebar-divider">
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+      </div>                
+    </form>
+</div>
+{% endblock %}
+
+{% block form_obj4 %}
+<div class="tab-pane show active" id="nav-obj4" role="tabpanel" aria-labelledby="nav-obj4-tab">
+    <p></p>
+    <div class="col-auto text-center">
+        <h5 class="m-0 text-primary"><strong>Optar por la excelencia operacional</strong></h5>
+    </div>
+    <hr class="sidebar-divider">
+    <form method="post">
+        <div class="col-auto">
+          <label class="text-primary" for="inlineFormInputGroup">Crear una cultura de optimización del uso de los recursos en la Empresa</label>
+        </div>
+        <div class="col-3">
+            <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_1" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Garantizar que exista una informacion documental veraz y oportuna en la empresa</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_2" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Garantizar la eficiencia y la eficacia en los subprocesos compras y almacén</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_3" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Implementar el Sistema de Gestión de la Calidad en la empresa</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_4" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Exceder las expectativas del cliente</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_5" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Realizar una gestión eficiente de cartera</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_6" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Crear una cultura de planeación estratégica en la empresa</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_7" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Establecer acciones, metodos y procedimientos de control y seguimiento a la gestión incluyendo gestión de riesgo y seguimiento establecer mecanismos para la prevención y evaluación</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_8" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Atender oportunamente los asuntos legales que sujan respecto a las actividadesn de la organización, a sus normas internas y a su relación con el entorno</label>
+        </div>
+        <div class="col-3">
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" name="iniciativa_4_9" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+          </div>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+        </div>                
+    </form>
+  </div>
+{% endblock %}
+
+{% block form_obj5 %}
+<div class="tab-pane show active" id="nav-obj5" role="tabpanel" aria-labelledby="nav-obj5-tab">
+    <p></p>
+    <div class="col-auto text-center">
+        <h5 class="m-0 text-primary"><strong>Garantizar la información oportuna y confiable</strong></h5>
+    </div>
+    <hr class="sidebar-divider">
+    <form>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Desarrolar una cultura de comunicación e información que facilite el alcance de los objetivos estratégicos de la Empresa</label>
+        </div>
+        <div class="col-3">
+        <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+        </div>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+        </div>                
+    </form>
+</div>
+{% endblock %}
+
+{% block form_obj6 %}
+<div class="tab-pane show active" id="nav-obj6" role="tabpanel" aria-labelledby="nav-obj6-tab">
+    <p></p>
+    <div class="col-auto text-center">
+        <h5 class="m-0 text-primary"><strong>Desarrollar integralmente al talento humano de la empresa</strong></h5>
+    </div>
+    <hr class="sidebar-divider">
+    <form>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Mejorar las capacidades, conocimientos y entrenamiento de los colaboradores</label>
+        </div>
+        <div class="col-3">
+        <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+        </div>
+        </div>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Mejorar la Cultura y Clima Organizacional</label>
+        </div>
+        <div class="col-3">
+        <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+        </div>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+        </div>                
+    </form>
+</div>  
+{% endblock %}
+
+{% block form_obj7 %}
+<div class="tab-pane show active" id="nav-obj7" role="tabpanel" aria-labelledby="nav-obj7-tab">
+    <p></p>
+    <div class="col-auto text-center">
+        <h5 class="m-0 text-primary"><strong>Garantizar una infraestructura tecnologica adecuada y suficiente en la empresa</strong></h5>
+    </div>
+    <hr class="sidebar-divider">
+    <form>
+        <div class="col-auto">
+            <label class="text-primary" for="inlineFormInputGroup">Integrar efectivamente la infraestructura tecnologica en la empresa</label>
+        </div>
+        <div class="col-3">
+        <div class="input-group mb-2">
+            <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Valor de 0 a 100">
+            <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+            </div>
+        </div>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
+        </div>                
+    </form> 
+</div>
+{% endblock %}
+

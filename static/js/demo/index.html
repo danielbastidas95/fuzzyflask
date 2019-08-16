@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Indicadores EMTEL</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+    <p></p>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        
+          <img class="img-profile " width=50% height=450%  src="http://festivaldetiterespopayan.org/wp-content/uploads/2017/10/cropped-logo21.png">
+      </a>
+      <p></p>
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-chart-line"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Configuración
+      </div>
+
+      <!-- Nav Item -->
+      <li class="nav-item">
+        <a class="nav-link" href="calificacion.html">
+          <i class="fas fa-fw fa-pencil-alt"></i>
+          <span>Asignar Calificación</span></a>
+      </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item -->
+      <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-download"></i>
+            <span>Descargar plantilla</span></a>
+        </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Documentación
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item -->
+      <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Investigación</span></a>
+        </li>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-user-graduate"></i>
+          <span>Autores</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-file"></i>
+          <span>manual de usuario</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          
+            <div class="col-8 text-center">
+                <h4><strong>Sistema de Apoyo a Gestión Estratégica</strong></h4>
+            </div>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <div class="col">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Universidad del Cauca</span>
+                    <img class="img-profile" width=15% height="80%" style="padding:0 0 0 0" src="https://carrerasuniversitarias.com.co/logos/original/logo-universidad-del-cauca.png">
+                </a>
+            </div>
+        </nav>          
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Indicadores Estratégicos</h1>
+          </div>
+          <p>Emtel S.A. E.S.P cuenta con 7 objetivos estratégicos segun el plan de acción 2018</p>
+          <ol>
+            <li>Garantizar la sostenibilidad económica de la Organización</li>
+            <li>Crear experiencias gratamente memorables para posicionar la marca EMTEL en el corazón de los clientes</li> 
+            <li>Incursionar en nuevas oportunidades de negocio</li>
+            <li>Optar por la excelencia operacional</li>
+            <li>Garantizar una información oportuna y confiable</li>
+            <li>Desarrollar integralmente al talento humano de la Empresa</li>
+            <li>Garantizar una infraestructura física adecuada y suficiente</li>
+          </ol>
+            
+        
+          
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Bar Chart -->
+            <div class="card shadow col-12">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Desempeño objetivos estratégicos</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <p></p>
+
+          <div class="row">
+            <!-- Radar Chart -->
+            <div class="card shadow col-8 mx-auto">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Balanced ScoreCar VS Nuevo Sistema</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="marksChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+          <p></p>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+
+              <!-- Progreso Iniciativas -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">1. Garantizar la sostenibilidad económica de la Organización</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Disminuir los pasivos a corto plazo <span class="float-right" id="value_1_1">85%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" id= "ini_1_1" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Incrementar los ingresos <span class="float-right">60%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progreso Iniciativa -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">3. Incursionar en nuevas oportunidades de negocio</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Generar nuevas oportunidades de negocio <span class="float-right">95%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progreso Iniciativa -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">5. Garantizar la información oportuna y confiable</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Desarrolar una cultura de comunicación e información que facilite el alcance de los objetivos estratégicos de la Empresa <span class="float-right">95%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progreso Iniciativa -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">6. Desarrollar integralmente al talento humano de la empresa</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Mejorar las capacidades, conocimientos y entrenamiento de los colaboradores <span class="float-right">70%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Mejorar la Cultura y Clima Organizacional <span class="float-right">90%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progreso Iniciativa -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">7. Garantizar una infraestructura tecnologica adecuada y suficiente en la empresa</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Integrar efectivamente la infraestructura tecnologica en la empresa <span class="float-right">93%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Segunda Columna-->
+
+            <div class="col-lg-6 mb-4">
+
+              <!-- Progreso Iniciativa -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">2. Crear experiencias gratamente memorables para posicionar la marca EMTEL en el corazón de los clientes</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Crear cultura basada en la experiencia <span class="float-right">90%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Alcanzar los tiempos promedio de instalacion y reparación requeridos <span class="float-right">45%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Garantizar los niveles de calidad establecidos en la prestación de los servicios TIC <span class="float-right">92%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Progreso Iniciativa -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">4. Optar por la excelencia operacional</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">Crear una cultura de optimización del uso de los recursos en la Empresa <span class="float-right">60%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Garantizar que exista una  informacion documental veraz y oportuna en la empresa <span class="float-right">75%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Garantizar la eficiencia y la eficacia en los subprocesos compras y almacén <span class="float-right">90%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Implementar el Sistema de Gestión de la Calidad en la empresa <span class="float-right">60%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Exceder las expectativas del cliente <span class="float-right">85%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Realizar una gestión eficiente de cartera <span class="float-right">80%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Crear una cultura de planeación estratégica en la empresa <span class="float-right">95%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Establecer acciones, metodos y procedimientos de control y seguimiento a la gestión incluyendo gestión de riesgo y seguimiento establecer mecanismos para la prevención y evaluación <span class="float-right">70%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Atender oportunamente los asuntos legales que sujan respecto a las actividadesn de la organización, a sus normas internas y a su relación con el entorno <span class="float-right">50%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Universidad del Cauca 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-bar-demo.js"></script>
+  <script src="js/demo/chart-radar-demo.js"></script>
+  <script src="js/demo/pruebadata.js"></script>
+  
+</body>
+
+</html>
